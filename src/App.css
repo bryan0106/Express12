@@ -1,0 +1,197 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+padding:0 auto;
+  text-align: center;
+}
+ body {
+         font-family: 'Cascadia Code', 'Fira Code', 'Roboto Mono', monospace;
+            overflow: hidden; /* Prevent body scroll */
+            margin: 0;
+     padding-top: 2rem;
+          padding-left: 3rem;
+            background-color: #282c34; /* Dark background */
+        }
+
+
+          #desktop-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('https://placehold.co/1920x1080/4a5568/ffffff?text=My Portfolio'); /* Placeholder background */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+             
+        }
+        #taskbar {
+            position: absolute;
+            top: -2rem;
+            left: -3rem;
+            width: 100%;
+            height: 30px;
+            background-color: #1e293be6; /* Dark blue-gray, semi-transparent */
+            backdrop-filter: blur(8px); /* Frosted glass effect */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000; /* Ensure taskbar is always on top */
+        }
+         #sidebar {
+            position: absolute;
+            top: -2rem;
+            left: -3rem;
+            width: 42px;
+            height: 100%;
+            background-color: rgba(30, 41, 59, 0.6); /* Dark blue-gray, semi-transparent */
+            backdrop-filter: blur(8px); /* Frosted glass effect */
+            display: flex;
+            flex-direction: column;
+      
+            padding: 5px;
+              padding-top:4rem;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 999; /* Ensure taskbar is always on top */
+        }
+
+
+
+
+
+
+          #close{
+            display: none;
+          visibility: hidden;
+          
+             }
+
+          .front{z-index:1000;}
+         .window ,.window1,.window2,.window3 {
+            font-size:small;
+            font-weight:100;
+            position: absolute;
+        
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+          
+          /* For resizing */
+            overflow: auto; /* For content scrolling */
+            z-index: 10; /* Base z-index */
+            top: 20%;
+            text-align: left;
+            padding-left: 10px;
+            user-select: none;
+        }
+ .window{
+   background-color: #2d3748;
+    color: #22c55e;
+      min-width: 580px;
+            min-height: 450px;
+               resize: both;
+           
+ }
+ .window2{
+   background-color: #DDDAD0;
+    color: #363636;
+      width: 380px;
+            height: 250px;
+           
+ }
+ .window3{
+   background-color: #ffffff;
+    color: #444444;
+      min-width: 580px;
+     min-height: 450px;
+        resize: both;
+           
+ }
+
+ .window1{
+   background-color: #ffffff;
+    color: #444444;
+      min-width: 580px;
+            min-height: 450px;
+               resize: both;
+           
+ }
+ 
+
+.cmdtab{
+    width: 103%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border-bottom: 1px solid gray;
+align-items: center;
+cursor: grab;
+margin-left: -3%;
+}
+
+
+
+
+
+        .window.min ,.window1.min,.window2.min,.window3.min {
+  display: none;
+visibility: hidden;
+transition: all .5s ease-in-out;     
+          }
+        .window.max ,.window1.max,.window2.max,.window3.max {
+          top: 0;
+          left: 0;
+         width: 97vw;
+            height: 99vh;
+transition: all .5s ease-in-out;     
+          }
+ .reset {
+              color: aliceblue;
+            position: absolute;
+            background-color: #2d3748; /* Darker blue-gray */
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            min-width: 250px;
+            min-height: 150px;
+            resize: both; /* For resizing */
+            overflow: auto; /* For content scrolling */
+            z-index: 10; /* Base z-index */
+            top: 30%;
+        }
+
+
+
+
+
+
+
+
+
+
+         .windowtab:hover {cursor: grab;}
+
+         .iconcon{
+          width:40px ;
+          height:40px;
+          border-radius: 4px;
+          margin-bottom: 20px;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+
+         }
+         .iconcon:hover{
+
+          box-shadow: inset 10px 10px 20px   rgb(255, 255, 255);
+        
+         }

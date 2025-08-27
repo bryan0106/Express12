@@ -1,0 +1,65 @@
+.projstack{
+    bottom: 5px;
+    width: 15px;
+    height: 15px;
+    border: 50%;
+    padding: 5px;
+}
+.toltip
+{
+    top: 20px; 
+    display: none;
+    visibility: hidden;
+}
+.prco{
+    width: 80%;
+  
+}
+.projicon{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.projtitle{
+    font-size: 15px;
+}
+.project{
+position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.projp{
+    margin-top: -5px;
+    font-size: 10px;
+      line-height: normal;
+    
+}
+.stacco{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner1{
+    width: 480px;
+    height: 70px;
+    background:linear-gradient(#17153B,#2E236C, #433D8B,#C8ACD6);
+    border: 1px solid;
+    overflow: hidden;
+      position: relative;
+     
+}
+.box{
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border:1px solid gray;
+    opacity: .8;
+    right: -20px;
+    box-shadow: 5px 3px 11px;
+    -webkit-box-reflect: left 100px ;
+    display:inline-flex;
+ 
+}
